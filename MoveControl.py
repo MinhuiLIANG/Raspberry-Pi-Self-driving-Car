@@ -38,7 +38,6 @@ motor_r2.start(0)
 
 @para:
     speed: speed of car;
-    cap: video;
 '''
 
 def left(speed):

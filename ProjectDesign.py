@@ -6,7 +6,7 @@ import numpy as np
 from KmeansClassifier import k_mean_two
 from MoveControl import forward, left, right
 from ImgProcess import cvAlgorithm
-from utils import clearCache
+from Utils import clearCache
 
 state=0
 column_threshold = 5   
