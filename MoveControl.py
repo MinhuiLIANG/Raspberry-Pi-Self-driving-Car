@@ -35,9 +35,11 @@ motor_r2.start(0)
     left: car turn left;
     right: car turn right;
     forward: car move forward;
-
+    move_pid: car move under pid control.
+    
 @para:
     speed: speed of car;
+    speed1, speed2: speed of car under pid control.
 '''
 
 def left(speed):
@@ -57,3 +59,9 @@ def forward(speed):
         motor_l2.ChangeDutyCycle(speed)
         motor_r1.ChangeDutyCycle(0)
         motor_r2.ChangeDutyCycle(speed)
+
+def move_pid(speed1,speed2):
+    motor_l1.ChangeDutyCycle(0)     
+    motor_l2.ChangeDutyCycle(speed1)
+    motor_r1.ChangeDutyCycle(0)
+    motor_r2.ChangeDutyCycle(speed2)
