@@ -1,4 +1,4 @@
-# AutoCar
+# Raspberry Pi self-driving car
 ## Project Design Coursework of XJTU Auto
 This is a project that can control a Raspberry Pi car to drive itself on a white track between two black borders.
 
