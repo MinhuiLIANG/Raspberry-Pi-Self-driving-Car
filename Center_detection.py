@@ -7,6 +7,9 @@ from sklearn.mixture import GaussianMixture
     position: position of black blocks;
     threshold: judge if single line;
     epochs: number of calculating rounds;
+@return:
+    center_1, center_2: center of the border lines;
+    class_res: 1 stands for single line detected, 2 stands for double.
 '''
 
 def K_means(position, threshold, epochs):
@@ -41,6 +44,9 @@ def K_means(position, threshold, epochs):
     position: position of black blocks;
     threshold: judge if single line;
     epochs: number of calculating rounds;
+@return:
+    center_1, center_2: center of the border lines;
+    class_res: 1 stands for single line detected, 2 stands for double.
 '''
 
 def GMM(position, threshold, epoch):

@@ -5,6 +5,9 @@ import cv2
         cvAlgorithm: video(image) process;
     @para:
         cap: video;
+    @return:
+        dst: binarization image;
+        frame: image.
 '''
 
 def cvAlgorithm(video_capture):
